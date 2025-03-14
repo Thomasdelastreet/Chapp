@@ -3,7 +3,7 @@ from firebase_admin import credentials, db
 from flask import Flask, request, jsonify
 
 # 🔥 Initialisation de Firebase
-cred = credentials.Certificate("serviceAccountKey.json")  # 🔑 Fichier JSON des clés Firebase
+cred = credentials.Certificate("chapp-bb571-firebase-adminsdk-fbsvc-1d1ceacd36.json")  # 🔑 Fichier JSON des clés Firebase
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://chapp-bb571-default-rtdb.firebaseio.com/'  # Remplace par l'URL de ta base Firebase
 })
